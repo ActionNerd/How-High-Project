@@ -8,7 +8,7 @@ import Adafruit_BMP.BMP085 as BMP085
 
 FREQUENCY_SECONDS     = 30
 
-bmp = BMP085.BMP.BMP085()
+bmp = BMP085.BMP085()
 
 while True:
 
@@ -41,7 +41,7 @@ while True:
     #print 'Altitude:    {0:0.1F} m'.format(altitude)
     #f.write((datetime.datetime.now(), temp, pressure, altitude))
     #f.close()
-    
+
     print 'Logged Bitch!'
 
     time.sleep(FREQUENCY_SECONDS)

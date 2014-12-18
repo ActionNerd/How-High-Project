@@ -73,7 +73,7 @@ while True:
 	print 'Temperature: {0:0.1f} C'.format(temp)
 	print 'Pressure:    {0:0.1f} Pa'.format(pressure)
 	print 'Altitude:    {0:0.1f} m'.format(altitude)
- 
+
 	# Append the data in the spreadsheet, including a timestamp
 	try:
 		worksheet.append_row((datetime.datetime.now(), temp, pressure, altitude))
