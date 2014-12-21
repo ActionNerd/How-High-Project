@@ -16,11 +16,13 @@ while True:
     temp = bmp.read_temperature()
     pressure = bmp.read_pressure()
     altitude = bmp.read_altitude()
+    Temper = "Temperature:"
     print datetime.datetime.now()
     print 'Temperature: {0:0.1F} C'.format(temp)
     print 'Pressure:    {0:0.1F} Pa'.format(pressure)
     print 'Altitude:    {0:0.1F} m'.format(altitude)
-    f.write (str(temp))
+    f.write (Temper)
+    f.write (str(temp)+"C"+'\n')
     f.close()
 
     time.sleep(FREQUENCY_SECONDS)
