@@ -6,7 +6,7 @@ import Adafruit_BMP.BMP085 as BMP085
 
 FREQUENCY_SECONDS     = 15
 
-bmp = BMP085.BMP085()
+bmp = BMP085.BMP085_ULTRAHIGHRES()
 
 while True:
 
@@ -35,4 +35,3 @@ while True:
     f.close()
 
     time.sleep(FREQUENCY_SECONDS)
-
